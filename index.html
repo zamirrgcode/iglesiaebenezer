@@ -8,90 +8,64 @@
   <style>
     body { 
       font-family: 'Poppins', sans-serif; 
-      background: linear-gradient(135deg, #1f1c2c, #928dab); 
-      color: #fff; 
+      background: linear-gradient(135deg, #1a0033, #003366, #004c99); 
+      color: #f0f0f0; 
       scroll-behavior: smooth; 
     }
     header { 
+      height: 100vh; 
       background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') no-repeat center center; 
       background-size: cover; 
-      color: white; 
-      text-align: center; 
-      padding: 120px 20px; 
+      display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; 
     }
-    header h1 { font-size: 4rem; color: #ffd700; font-weight: bold; animation: fadeInDown 2s; }
-    header p { font-size: 1.5rem; animation: fadeInUp 2s; }
-    section { 
-      margin: 60px auto; 
-      padding: 40px; 
-      background: rgba(255,255,255,0.05); 
-      border-radius: 12px; 
-      backdrop-filter: blur(10px); 
-      transition: all 0.8s ease; 
-    }
-    section:hover { transform: scale(1.02); }
+    header h1 { font-size: 4rem; color: #ffd700; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+    header p { font-size: 1.5rem; color: #00ccff; }
+    section { margin: 60px auto; padding: 40px; background: rgba(255,255,255,0.08); border-radius: 16px; backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
     h2 { color: #ffd700; font-weight: bold; }
-    .card { 
-      background: rgba(255,255,255,0.1); 
-      border: none; 
-      color: #fff; 
-      border-radius: 12px; 
-      transition: transform 0.3s ease; 
-    }
+    .card { background: rgba(255,255,255,0.1); border: none; color: #fff; border-radius: 12px; transition: transform 0.3s ease; }
     .card:hover { transform: translateY(-5px) scale(1.05); }
-    footer { background: rgba(0,0,0,0.8); color: #ffd700; text-align: center; padding: 20px; }
+    footer { background: rgba(0,0,0,0.9); color: #ffd700; text-align: center; padding: 20px; }
+    /* Responsivo */
+    @media (max-width: 768px) {
+      header { height: auto; padding: 60px 20px; }
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+      section { margin: 30px auto; padding: 20px; }
+      h2 { font-size: 1.5rem; }
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top" style="background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);">
+<nav class="navbar navbar-expand-lg fixed-top" style="background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);">
   <div class="container">
     <a class="navbar-brand text-warning" href="#">Iglesia Ebenezer</a>
     <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">☰</button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-warning" href="#quienes-somos">Quiénes somos</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="#galeria">Galería</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="#eventos">Eventos pasados</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="../eventos-iglesia-ebenezer/">Invitaciones</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="#quienes-somos">Quiénes somos</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="#eventos">Eventos pasados</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="../eventos-iglesia-ebenezer/">Eventos Ebenezer</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Intro -->
-<header class="animate__animated animate__fadeInDown">
-  <h1>Ebenezer</h1>
-  <p>Hasta aquí nos ayudó Jehová</p>
+<header>
+  <h1 class="animate__animated animate__fadeInDown">Ebenezer</h1>
+  <p class="animate__animated animate__fadeInUp">Hasta aquí nos ayudó Jehová</p>
 </header>
 
-<!-- Quiénes somos -->
 <section id="quienes-somos" class="container animate__animated animate__fadeInUp">
   <h2>Quiénes somos</h2>
   <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Fe</h5>
-        <p>Somos una iglesia cristiana comprometida con la enseñanza de la Palabra y el crecimiento espiritual.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Comunidad</h5>
-        <p>Promovemos la comunión fraterna y el servicio, fortaleciendo familias y lazos comunitarios.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Esperanza</h5>
-        <p>Buscamos ser luz en la sociedad, transmitiendo esperanza y amor a través de Cristo.</p>
-      </div>
-    </div>
+    <div class="col-md-4"><div class="card p-3"><h5>Fe</h5><p>Comprometidos con la enseñanza de la Palabra.</p></div></div>
+    <div class="col-md-4"><div class="card p-3"><h5>Comunidad</h5><p>Promovemos la comunión fraterna y el servicio.</p></div></div>
+    <div class="col-md-4"><div class="card p-3"><h5>Esperanza</h5><p>Transmitimos esperanza y amor a través de Cristo.</p></div></div>
   </div>
 </section>
 
-<!-- Galería -->
 <section id="galeria" class="container animate__animated animate__fadeInUp">
   <h2>Galería</h2>
   <div class="row mt-4">
@@ -101,32 +75,15 @@
   </div>
 </section>
 
-<!-- Eventos pasados -->
 <section id="eventos" class="container animate__animated animate__fadeInUp">
   <h2>Eventos pasados</h2>
   <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Aniversario 2025</h5>
-        <p>Celebramos con alabanzas, predicación y comunión fraterna.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Campamento Juvenil</h5>
-        <p>Un espacio de reflexión y crecimiento para los jóvenes.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-3">
-        <h5>Concierto de AEV</h5>
-        <p>Un tiempo de adoración y música para toda la comunidad.</p>
-      </div>
-    </div>
+    <div class="col-md-4"><div class="card p-3"><h5>Aniversario 2025</h5><p>Celebración con alabanzas y comunión.</p></div></div>
+    <div class="col-md-4"><div class="card p-3"><h5>Campamento Juvenil</h5><p>Reflexión y crecimiento para jóvenes.</p></div></div>
+    <div class="col-md-4"><div class="card p-3"><h5>Concierto de Alabanza</h5><p>Adoración y música para la comunidad.</p></div></div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>&copy; 2026 Iglesia Ebenezer – <span class="gold-text">Hasta aquí nos ayudó Jehová</span></p>
 </footer>
