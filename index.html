@@ -83,17 +83,69 @@
 <section id="eventos" class="container animate__animated animate__fadeInUp">
   <h2>Eventos pasados</h2>
   <div class="row mt-4">
-    <div class="col-md-4"><div class="card p-3"><h5>Aniversario 2025</h5><p>Nuestro 31 años en comunión y bautizo.</p></div></div>
-<div class="col-md-4">
-  <div class="card p-3">
-    <h5><a href="eventos/paseo-en-comunidad/" class="text-warning">Paseo</a></h5>
-    <p>Reflexión y crecimiento para jóvenes.</p>
-  </div>
-</div>
 
-    <div class="col-md-4"><div class="card p-3"><h5>AEV</h5><p>Adoración y música para todos.</p></div></div>
+    <!-- Aniversario 2025 -->
+    <div class="col-md-4 mb-3">
+      <a href="eventos/aniversario-2025/" class="text-decoration-none">
+        <div class="card p-3 h-100 shadow-lg">
+          <h5 class="text-warning">Aniversario 2025</h5>
+          <p class="text-light">Nuestro 31 años en comunión y bautizo.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Paseo en comunidad -->
+    <div class="col-md-4 mb-3">
+      <a href="eventos/paseo-en-comunidad/" class="text-decoration-none">
+        <div class="card p-3 h-100 shadow-lg">
+          <h5 class="text-warning">Paseo</h5>
+          <p class="text-light">Reflexión y crecimiento para jóvenes.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- AEV -->
+    <div class="col-md-4 mb-3">
+      <a href="eventos/aev/" class="text-decoration-none">
+        <div class="card p-3 h-100 shadow-lg">
+          <h5 class="text-warning">AEV</h5>
+          <p class="text-light">Adoración y música para todos.</p>
+        </div>
+      </a>
+    </div>
+
   </div>
 </section>
+
+<style>
+  /* Estilo general */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a0033, #003366, #004c99);
+    color: #fff;
+  }
+
+  /* Tarjetas */
+  .card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover: efecto al pasar el mouse */
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  }
+
+  /* Responsivo para celular */
+  @media (max-width: 768px) {
+    h2 { font-size: 1.5rem; }
+    .card h5 { font-size: 1.2rem; }
+    .card p { font-size: 0.9rem; }
+  }
+</style>
+
 
 <!-- Footer -->
 <footer>
