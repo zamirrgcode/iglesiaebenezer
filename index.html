@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Iglesia Ebenezer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Bootstrap y Animate.css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -33,35 +33,69 @@
 </nav>
 
 <!-- Intro -->
-<header style="background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') no-repeat center center; background-size: cover;">
-  <h1 class="animate__animated animate__fadeInDown text-white fw-bold">Ebenezer</h1>
-  <p class="animate__animated animate__fadeInUp text-light">Hasta aquí nos ayudó Jehová</p>
+<header style="background: url('img/intro.jpg') no-repeat center center; background-size: cover;">
+  <h1 class="animate__animated animate__fadeInDown text-dark fw-bold">Ebenezer</h1>
+  <p class="animate__animated animate__fadeInUp text-secondary">Hasta aquí nos ayudó Jehová</p>
 </header>
 
 <!-- Quiénes somos -->
 <section id="quienes-somos" class="container animate__animated animate__fadeInUp">
   <h2>Quiénes somos</h2>
   <div class="row mt-4">
+    <!-- Fe -->
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <div class="card p-3 h-100 shadow-lg">
         <h5 class="text-primary">Fe</h5>
-        <p class="text-dark">Comprometidos con la enseñanza de la Palabra.</p>
+        <p class="text-dark">Comprometidos con la enseñanza de la Palabra y la vivencia diaria de la fe cristiana.</p>
+        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalFe">Leer más</button>
       </div>
     </div>
+    <!-- Comunidad -->
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <div class="card p-3 h-100 shadow-lg">
         <h5 class="text-primary">Comunidad</h5>
-        <p class="text-dark">Promovemos la comunión fraterna y el servicio.</p>
+        <p class="text-dark">Promovemos la comunión fraterna, el servicio y la solidaridad entre hermanos.</p>
+        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalComunidad">Leer más</button>
       </div>
     </div>
+    <!-- Esperanza -->
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <div class="card p-3 h-100 shadow-lg">
         <h5 class="text-primary">Esperanza</h5>
-        <p class="text-dark">Transmitimos esperanza y amor a través de Cristo.</p>
+        <p class="text-dark">Transmitimos esperanza y amor a través de Cristo, guiando hacia un futuro con propósito.</p>
+        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalEsperanza">Leer más</button>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modales de Quiénes somos -->
+<div class="modal fade" id="modalFe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h4 class="text-primary">Fe</h4>
+      <p>La fe es el fundamento de nuestra iglesia. Creemos en la Palabra de Dios como guía para cada aspecto de la vida. Nuestra misión es fortalecer la confianza en Cristo y vivir conforme a sus enseñanzas.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalComunidad" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h4 class="text-primary">Comunidad</h4>
+      <p>La comunidad es el corazón de Ebenezer. Nos apoyamos mutuamente, compartimos alegrías y dificultades, y trabajamos juntos para servir a quienes más lo necesitan.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEsperanza" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h4 class="text-primary">Esperanza</h4>
+      <p>La esperanza nos impulsa a mirar hacia adelante con confianza. En Cristo encontramos la certeza de un futuro lleno de amor, paz y propósito eterno.</p>
+    </div>
+  </div>
+</div>
 
 <!-- Galería -->
 <section id="galeria" class="container animate__animated animate__fadeInUp">
@@ -83,7 +117,6 @@
 <section id="eventos" class="container animate__animated animate__fadeInUp">
   <h2>Eventos pasados</h2>
   <div class="row mt-4">
-
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <a href="eventos/aniversario-2025/" class="text-decoration-none">
         <div class="card p-3 h-100 shadow-lg">
@@ -92,7 +125,6 @@
         </div>
       </a>
     </div>
-
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <a href="eventos/paseo-en-comunidad/" class="text-decoration-none">
         <div class="card p-3 h-100 shadow-lg">
@@ -101,7 +133,6 @@
         </div>
       </a>
     </div>
-
     <div class="col-12 col-sm-6 col-md-4 mb-3">
       <a href="eventos/aev/" class="text-decoration-none">
         <div class="card p-3 h-100 shadow-lg">
@@ -110,19 +141,15 @@
         </div>
       </a>
     </div>
-
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="position-relative">
+<footer class="position-relative bg-light text-center p-3">
   <p class="text-dark">&copy; 2026 Iglesia Ebenezer – <span class="fw-bold">Hasta aquí nos ayudó Jehová</span></p>
-  <!-- Logo cruz en esquina inferior derecha -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cross_simple_white.svg/1024px-Cross_simple_white.svg.png" 
        alt="Cruz" 
        style="position:absolute; bottom:10px; right:10px; width:40px; opacity:0.8;">
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<script src
