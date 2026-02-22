@@ -1,101 +1,38 @@
-/* Tipografía base */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
-/* Header */
-header {
-  background-color: #0a2a66;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+/* Colores institucionales */
+.bg-ebenezer {
+  background-color: #0a2a66; /* Azul profundo */
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-}
-
-header .logo {
-  height: 50px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #facc15;
-}
-
-/* Hero */
-#inicio {
-  background: url('banner.jpg') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-#inicio .overlay {
-  background: rgba(0,0,0,0.5);
-  padding: 40px;
-  border-radius: 10px;
-}
-
-#inicio h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-#inicio p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-/* Botones */
 .btn-primary {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 5px;
+  background-color: #2563eb; /* Azul brillante */
+  border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0a2a66;
+  background-color: #1e40af;
 }
 
-.btn-gold {
-  background-color: #facc15;
+.btn-warning {
+  background-color: #fbbf24; /* Dorado cálido */
+  border: none;
   color: #0a2a66;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 5px;
 }
 
-.btn-gold:hover {
-  background-color: #eab308;
+.btn-warning:hover {
+  background-color: #f59e0b;
+  color: white;
+}
+
+/* Hero overlay */
+.overlay {
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  border-radius: 10px;
 }
 
 /* Secciones */
@@ -106,63 +43,9 @@ section {
 section h2 {
   color: #0a2a66;
   margin-bottom: 20px;
-  font-size: 2rem;
 }
 
-/* Fondos alternos */
-.bg-light {
-  background-color: #f3f4f6;
-}
-
-/* Tabla de servicios */
-table {
-  width: 100%;
-  border-collapse: collapse;
+/* Tabla */
+.table {
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-table th {
-  background-color: #0a2a66;
-  color: white;
-  padding: 12px;
-}
-
-table td {
-  padding: 12px;
-}
-
-/* Devocional */
-#devocional article {
-  background: white;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-radius: 8px;
-}
-
-#devocional .date {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-}
-
-form input, form textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Footer */
-footer {
-  background-color: #0a2a66;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
