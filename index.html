@@ -9,16 +9,15 @@
 <body class="font-sans text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white">
+  <header class="bg-blue-900 text-white fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold">Iglesia Ebenezer</h1>
       <nav>
         <ul class="flex space-x-6">
           <li><a href="#inicio" class="hover:text-yellow-400">Inicio</a></li>
           <li><a href="#nosotros" class="hover:text-yellow-400">Nosotros</a></li>
-          <li><a href="#servicios" class="hover:text-yellow-400">Servicios</a></li>
-          <li><a href="#devocional" class="hover:text-yellow-400">Devocional</a></li>
           <li><a href="#donaciones" class="hover:text-yellow-400">Donaciones</a></li>
+          <li><a href="#devocional" class="hover:text-yellow-400">Devocional</a></li>
           <li><a href="#envivo" class="hover:text-yellow-400">En vivo</a></li>
           <li><a href="#contacto" class="hover:text-yellow-400">Contacto</a></li>
         </ul>
@@ -28,8 +27,8 @@
 
   <!-- Hero -->
   <section id="inicio" class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-white" style="background-image: url('banner.jpg');">
-    <div class="bg-black bg-opacity-50 p-8 rounded">
-      <h2 class="text-4xl font-bold mb-4">Bienvenido a Iglesia Ebenezer</h2>
+    <div class="bg-black bg-opacity-50 p-8 rounded text-center">
+      <h2 class="text-4xl font-bold mb-4">Un lugar diferente</h2>
       <p class="text-lg mb-6">“Hasta aquí nos ayudó Jehová”</p>
       <div class="space-x-4">
         <a href="#nosotros" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Conocer más</a>
@@ -41,7 +40,14 @@
   <!-- Nosotros -->
   <section id="nosotros" class="container mx-auto py-16">
     <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
-    <p class="text-lg">Somos una comunidad de fe, esperanza y amor...</p>
+    <p class="text-lg">Eres un navegante que busca la diferencia y llegaste hasta nosotros, un lugar diferente. Vayamos juntos a encontrar tu propósito de vida...</p>
+  </section>
+
+  <!-- Donaciones -->
+  <section id="donaciones" class="bg-green-100 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Donaciones</h2>
+    <p class="mb-4">Gracias a tus diezmos y ofrendas, miles de personas están encontrando a Jesús.</p>
+    <a href="https://paypal.me/tucuenta" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Donar ahora</a>
   </section>
 
   <!-- Servicios -->
@@ -57,16 +63,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="border px-4 py-2">Domingo</td>
-            <td class="border px-4 py-2">10:00 AM</td>
-            <td class="border px-4 py-2">Culto principal</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">Miércoles</td>
-            <td class="border px-4 py-2">7:00 PM</td>
-            <td class="border px-4 py-2">Reunión de oración</td>
-          </tr>
+          <tr><td class="border px-4 py-2">Martes</td><td class="border px-4 py-2">7:15 PM</td><td class="border px-4 py-2">Servicio de oración</td></tr>
+          <tr><td class="border px-4 py-2">Jueves</td><td class="border px-4 py-2">7:30 PM</td><td class="border px-4 py-2">Servicio general</td></tr>
+          <tr><td class="border px-4 py-2">Domingo</td><td class="border px-4 py-2">4:00 PM</td><td class="border px-4 py-2">Culto principal</td></tr>
         </tbody>
       </table>
     </div>
@@ -75,14 +74,15 @@
   <!-- Devocional -->
   <section id="devocional" class="container mx-auto py-16">
     <h2 class="text-3xl font-bold mb-6">Devocional semanal</h2>
-    <p class="text-lg">Aquí puedes publicar reflexiones o artículos...</p>
-  </section>
-
-  <!-- Donaciones -->
-  <section id="donaciones" class="bg-green-100 py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Donaciones</h2>
-    <p class="mb-4">Apoya nuestra misión con tu ofrenda.</p>
-    <a href="https://paypal.me/tucuenta" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Donar ahora</a>
+    <div class="space-y-6">
+      <article class="p-4 border rounded shadow">
+        <h3 class="text-xl font-semibold">Honra a otros y Dios te honrará</h3>
+        <p class="text-sm text-gray-500">Feb 16, 2026</p>
+        <p class="mt-2">“Ámense los unos a los otros con amor fraternal...” (Romanos 12:10)</p>
+        <a href="#" class="text-blue-600 hover:underline">Leer más</a>
+      </article>
+      <!-- Más artículos aquí -->
+    </div>
   </section>
 
   <!-- En vivo -->
@@ -95,6 +95,8 @@
   <section id="contacto" class="bg-gray-100 py-16">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+      <p class="mb-4">Dirección: Losa Deportiva Los Licenciados, Parque Simon Bolivar, Ayacucho, Perú.</p>
+      <p class="mb-4">Correo: iglesiaebenezer@gmail.com | Tel: +51 975 271 936</p>
       <form class="space-y-4">
         <input type="text" placeholder="Nombre" class="w-full border p-2 rounded">
         <input type="email" placeholder="Correo" class="w-full border p-2 rounded">
