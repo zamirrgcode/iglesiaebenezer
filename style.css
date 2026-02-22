@@ -8,13 +8,24 @@ body {
 
 /* Header */
 header {
-  background-color: #0a2a66; /* Azul institucional */
+  background-color: #0a2a66;
   color: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  height: 50px;
 }
 
 header nav ul {
@@ -30,10 +41,10 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #facc15; /* Dorado */
+  color: #facc15;
 }
 
-/* Hero/Banner */
+/* Hero */
 #inicio {
   background: url('banner.jpg') center/cover no-repeat;
   height: 100vh;
@@ -50,6 +61,16 @@ header nav a:hover {
   border-radius: 10px;
 }
 
+#inicio h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
 /* Botones */
 .btn-primary {
   background-color: #1e3a8a;
@@ -57,6 +78,7 @@ header nav a:hover {
   padding: 12px 24px;
   border-radius: 5px;
   text-decoration: none;
+  margin: 5px;
 }
 
 .btn-primary:hover {
@@ -69,6 +91,7 @@ header nav a:hover {
   padding: 12px 24px;
   border-radius: 5px;
   text-decoration: none;
+  margin: 5px;
 }
 
 .btn-gold:hover {
@@ -86,6 +109,11 @@ section h2 {
   font-size: 2rem;
 }
 
+/* Fondos alternos */
+.bg-light {
+  background-color: #f3f4f6;
+}
+
 /* Tabla de servicios */
 table {
   width: 100%;
@@ -101,8 +129,34 @@ table th {
 }
 
 table td {
-  border: 1px solid #ddd;
   padding: 12px;
+}
+
+/* Devocional */
+#devocional article {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+#devocional .date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 /* Footer */
