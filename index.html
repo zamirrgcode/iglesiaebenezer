@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iglesia Ebenezer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
 </head>
-<body class="font-sans text-gray-800">
+<body class="text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white fixed w-full z-50">
+  <header class="bg-[#0a2a66] text-white fixed w-full z-50 shadow">
     <div class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold">Iglesia Ebenezer</h1>
       <nav>
@@ -28,86 +31,83 @@
   <!-- Hero -->
   <section id="inicio" class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-white" style="background-image: url('banner.jpg');">
     <div class="bg-black bg-opacity-50 p-8 rounded text-center">
-      <h2 class="text-4xl font-bold mb-4">Un lugar diferente</h2>
+      <h2 class="text-5xl font-bold mb-4">Un lugar diferente</h2>
       <p class="text-lg mb-6">“Hasta aquí nos ayudó Jehová”</p>
       <div class="space-x-4">
-        <a href="#nosotros" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Conocer más</a>
-        <a href="#donaciones" class="bg-green-600 px-4 py-2 rounded hover:bg-green-700">Donar</a>
+        <a href="#nosotros" class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-700">Conocer más</a>
+        <a href="#donaciones" class="bg-yellow-500 px-6 py-3 rounded hover:bg-yellow-600">Donar</a>
       </div>
     </div>
   </section>
 
   <!-- Nosotros -->
-  <section id="nosotros" class="container mx-auto py-16">
-    <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
+  <section id="nosotros" class="container mx-auto py-20">
+    <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Nosotros</h2>
     <p class="text-lg">Eres un navegante que busca la diferencia y llegaste hasta nosotros, un lugar diferente. Vayamos juntos a encontrar tu propósito de vida...</p>
   </section>
 
   <!-- Donaciones -->
-  <section id="donaciones" class="bg-green-100 py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Donaciones</h2>
+  <section id="donaciones" class="bg-gray-100 py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Donaciones</h2>
     <p class="mb-4">Gracias a tus diezmos y ofrendas, miles de personas están encontrando a Jesús.</p>
-    <a href="https://paypal.me/tucuenta" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Donar ahora</a>
+    <a href="https://paypal.me/tucuenta" class="bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600">Donar ahora</a>
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="bg-gray-100 py-16">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Servicios y Horarios</h2>
-      <table class="table-auto w-full bg-white shadow rounded">
-        <thead>
-          <tr class="bg-blue-900 text-white">
-            <th class="px-4 py-2">Día</th>
-            <th class="px-4 py-2">Hora</th>
-            <th class="px-4 py-2">Actividad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="border px-4 py-2">Martes</td><td class="border px-4 py-2">7:15 PM</td><td class="border px-4 py-2">Servicio de oración</td></tr>
-          <tr><td class="border px-4 py-2">Jueves</td><td class="border px-4 py-2">7:30 PM</td><td class="border px-4 py-2">Servicio general</td></tr>
-          <tr><td class="border px-4 py-2">Domingo</td><td class="border px-4 py-2">4:00 PM</td><td class="border px-4 py-2">Culto principal</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <section id="servicios" class="container mx-auto py-20">
+    <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Servicios y Horarios</h2>
+    <table class="table-auto w-full bg-white shadow rounded">
+      <thead>
+        <tr class="bg-[#0a2a66] text-white">
+          <th class="px-4 py-2">Día</th>
+          <th class="px-4 py-2">Hora</th>
+          <th class="px-4 py-2">Actividad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-4 py-2">Martes</td><td class="border px-4 py-2">7:15 PM</td><td class="border px-4 py-2">Servicio de oración</td></tr>
+        <tr><td class="border px-4 py-2">Jueves</td><td class="border px-4 py-2">7:30 PM</td><td class="border px-4 py-2">Servicio general</td></tr>
+        <tr><td class="border px-4 py-2">Domingo</td><td class="border px-4 py-2">4:00 PM</td><td class="border px-4 py-2">Culto principal</td></tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- Devocional -->
-  <section id="devocional" class="container mx-auto py-16">
-    <h2 class="text-3xl font-bold mb-6">Devocional semanal</h2>
-    <div class="space-y-6">
-      <article class="p-4 border rounded shadow">
+  <section id="devocional" class="bg-gray-100 py-20">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Devocional semanal</h2>
+      <article class="p-6 border rounded shadow bg-white">
         <h3 class="text-xl font-semibold">Honra a otros y Dios te honrará</h3>
         <p class="text-sm text-gray-500">Feb 16, 2026</p>
         <p class="mt-2">“Ámense los unos a los otros con amor fraternal...” (Romanos 12:10)</p>
         <a href="#" class="text-blue-600 hover:underline">Leer más</a>
       </article>
-      <!-- Más artículos aquí -->
     </div>
   </section>
 
   <!-- En vivo -->
-  <section id="envivo" class="container mx-auto py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Transmisión en vivo</h2>
+  <section id="envivo" class="container mx-auto py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Transmisión en vivo</h2>
     <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/TUVIDEO" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="bg-gray-100 py-16">
+  <section id="contacto" class="bg-gray-100 py-20">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Contacto</h2>
-      <p class="mb-4">Dirección: Losa Deportiva Los Licenciados, Parque Simon Bolivar, Ayacucho, Perú.</p>
-      <p class="mb-4">Correo: iglesiaebenezer@gmail.com | Tel: +51 975 271 936</p>
+      <h2 class="text-3xl font-bold mb-6 text-[#0a2a66]">Contacto</h2>
+      <p class="mb-4">Dirección: 2520 W Irving Blvd, Irving, TX 75061, EE. UU.</p>
+      <p class="mb-4">Correo: info@iglesiaebenezer.org | Tel: +1 (469) 531-8541</p>
       <form class="space-y-4">
         <input type="text" placeholder="Nombre" class="w-full border p-2 rounded">
         <input type="email" placeholder="Correo" class="w-full border p-2 rounded">
         <textarea placeholder="Mensaje" class="w-full border p-2 rounded"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
+        <button type="submit" class="bg-[#0a2a66] text-white px-6 py-2 rounded hover:bg-blue-800">Enviar</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center p-4">
+  <footer class="bg-[#0a2a66] text-white text-center p-4">
     <p>© 2026 Iglesia Ebenezer | “Hasta aquí nos ayudó Jehová”</p>
   </footer>
 
