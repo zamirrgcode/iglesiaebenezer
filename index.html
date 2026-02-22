@@ -4,65 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iglesia Ebenezer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-ebenezer fixed-top shadow">
     <div class="container">
-      <!-- Logo en lugar de texto -->
-      <a href="#inicio">
-        <img src="logo.png" alt="Iglesia Ebenezer" class="logo">
+      <a class="navbar-brand" href="#inicio">
+        <img src="logo.png" alt="Iglesia Ebenezer" height="50">
       </a>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#donaciones">Donaciones</a></li>
-          <li><a href="#devocional">Devocional</a></li>
-          <li><a href="#envivo">En vivo</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#donaciones">Donaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#devocional">Devocional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#envivo">En vivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero -->
-  <section id="inicio">
-    <div class="overlay">
-      <h2>Un lugar diferente</h2>
-      <p>“Hasta aquí nos ayudó Jehová”</p>
-      <div class="buttons">
-        <a href="#nosotros" class="btn-primary">Conocer más</a>
-        <a href="#donaciones" class="btn-gold">Donar</a>
+  <!-- Hero con carrusel -->
+  <section id="inicio" class="mt-5 pt-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-cover text-center text-white" style="background-image:url('banner1.jpg');">
+          <div class="overlay p-5">
+            <h2 class="display-4">Un lugar diferente</h2>
+            <p class="lead">“Hasta aquí nos ayudó Jehová”</p>
+            <a href="#nosotros" class="btn btn-primary">Conocer más</a>
+            <a href="#donaciones" class="btn btn-warning">Donar</a>
+          </div>
+        </div>
+        <div class="carousel-item bg-cover text-center text-white" style="background-image:url('banner2.jpg');">
+          <div class="overlay p-5">
+            <h2 class="display-4">Encuentra tu propósito</h2>
+            <p class="lead">Somos una comunidad de fe y esperanza</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Nosotros (texto + imagen) -->
+  <section id="nosotros" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Nosotros</h2>
+        <p>Eres un navegante que busca la diferencia y llegaste hasta nosotros, un lugar diferente...</p>
+      </div>
+      <div class="col-md-6">
+        <img src="nosotros.jpg" class="img-fluid rounded shadow" alt="Nosotros">
       </div>
     </div>
   </section>
 
-  <!-- Nosotros -->
-  <section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Eres un navegante que busca la diferencia y llegaste hasta nosotros, un lugar diferente. Vayamos juntos a encontrar tu propósito de vida...</p>
-  </section>
-
   <!-- Donaciones -->
-  <section id="donaciones" class="bg-light">
+  <section id="donaciones" class="bg-light py-5 text-center">
     <h2>Donaciones</h2>
     <p>Gracias a tus diezmos y ofrendas, miles de personas están encontrando a Jesús.</p>
-    <a href="https://paypal.me/tucuenta" class="btn-gold">Donar ahora</a>
+    <a href="https://paypal.me/tucuenta" class="btn btn-warning">Donar ahora</a>
   </section>
 
   <!-- Servicios -->
-  <section id="servicios">
+  <section id="servicios" class="container py-5">
     <h2>Servicios y Horarios</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Hora</th>
-          <th>Actividad</th>
-        </tr>
+    <table class="table shadow">
+      <thead class="table-dark">
+        <tr><th>Día</th><th>Hora</th><th>Actividad</th></tr>
       </thead>
       <tbody>
         <tr><td>Martes</td><td>7:15 PM</td><td>Servicio de oración</td></tr>
@@ -73,39 +95,52 @@
   </section>
 
   <!-- Devocional -->
-  <section id="devocional" class="bg-light">
-    <h2>Devocional semanal</h2>
-    <article>
-      <h3>Honra a otros y Dios te honrará</h3>
-      <p class="date">Feb 16, 2026</p>
-      <p>“Ámense los unos a los otros con amor fraternal...” (Romanos 12:10)</p>
-      <a href="#">Leer más</a>
-    </article>
+  <section id="devocional" class="bg-light py-5">
+    <div class="container">
+      <h2>Devocional semanal</h2>
+      <article class="p-4 bg-white shadow rounded">
+        <h3>Honra a otros y Dios te honrará</h3>
+        <p class="text-muted">Feb 16, 2026</p>
+        <p>“Ámense los unos a los otros con amor fraternal...” (Romanos 12:10)</p>
+        <a href="devocional.html" class="btn btn-primary">Leer más</a>
+      </article>
+    </div>
   </section>
 
   <!-- En vivo -->
-  <section id="envivo">
+  <section id="envivo" class="container py-5 text-center">
     <h2>Transmisión en vivo</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/TUVIDEO" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="bg-light">
-    <h2>Contacto</h2>
-    <p>Dirección: 2520 W Irving Blvd, Irving, TX 75061, EE. UU.</p>
-    <p>Correo: info@iglesiaebenezer.org | Tel: +1 (469) 531-8541</p>
-    <form>
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo">
-      <textarea placeholder="Mensaje"></textarea>
-      <button type="submit" class="btn-primary">Enviar</button>
-    </form>
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Dirección: 2520 W Irving Blvd, Irving, TX 75061, EE. UU.</p>
+      <p>Correo: info@iglesiaebenezer.org | Tel: +1 (469) 531-8541</p>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Correo">
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Mensaje"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="bg-ebenezer text-white text-center p-3">
     <p>© 2026 Iglesia Ebenezer | “Hasta aquí nos ayudó Jehová”</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
