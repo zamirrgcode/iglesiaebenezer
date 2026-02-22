@@ -4,103 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iglesia Ebenezer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans text-gray-800">
 
   <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Iglesia Ebenezer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#devocional">Devocional</a></li>
-          <li class="nav-item"><a class="nav-link" href="#donaciones">Donaciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#envivo">En vivo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+  <header class="bg-blue-900 text-white">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Iglesia Ebenezer</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#inicio" class="hover:text-yellow-400">Inicio</a></li>
+          <li><a href="#nosotros" class="hover:text-yellow-400">Nosotros</a></li>
+          <li><a href="#servicios" class="hover:text-yellow-400">Servicios</a></li>
+          <li><a href="#devocional" class="hover:text-yellow-400">Devocional</a></li>
+          <li><a href="#donaciones" class="hover:text-yellow-400">Donaciones</a></li>
+          <li><a href="#envivo" class="hover:text-yellow-400">En vivo</a></li>
+          <li><a href="#contacto" class="hover:text-yellow-400">Contacto</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero -->
-  <section id="inicio" class="bg-light text-center p-5">
-    <h1 class="display-4">Bienvenido a Iglesia Ebenezer</h1>
-    <p class="lead">“Hasta aquí nos ayudó Jehová”</p>
-    <a href="#nosotros" class="btn btn-primary">Conocer más</a>
-    <a href="#donaciones" class="btn btn-success">Donar</a>
+  <section id="inicio" class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-white" style="background-image: url('banner.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded">
+      <h2 class="text-4xl font-bold mb-4">Bienvenido a Iglesia Ebenezer</h2>
+      <p class="text-lg mb-6">“Hasta aquí nos ayudó Jehová”</p>
+      <div class="space-x-4">
+        <a href="#nosotros" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Conocer más</a>
+        <a href="#donaciones" class="bg-green-600 px-4 py-2 rounded hover:bg-green-700">Donar</a>
+      </div>
+    </div>
   </section>
 
   <!-- Nosotros -->
-  <section id="nosotros" class="container py-5">
-    <h2>Nosotros</h2>
-    <p>Somos una comunidad de fe, esperanza y amor...</p>
+  <section id="nosotros" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
+    <p class="text-lg">Somos una comunidad de fe, esperanza y amor...</p>
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="bg-light py-5">
-    <div class="container">
-      <h2>Servicios y Horarios</h2>
-      <table class="table">
-        <tr><th>Día</th><th>Hora</th><th>Actividad</th></tr>
-        <tr><td>Domingo</td><td>10:00 AM</td><td>Culto principal</td></tr>
-        <tr><td>Miércoles</td><td>7:00 PM</td><td>Reunión de oración</td></tr>
+  <section id="servicios" class="bg-gray-100 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Servicios y Horarios</h2>
+      <table class="table-auto w-full bg-white shadow rounded">
+        <thead>
+          <tr class="bg-blue-900 text-white">
+            <th class="px-4 py-2">Día</th>
+            <th class="px-4 py-2">Hora</th>
+            <th class="px-4 py-2">Actividad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">Domingo</td>
+            <td class="border px-4 py-2">10:00 AM</td>
+            <td class="border px-4 py-2">Culto principal</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Miércoles</td>
+            <td class="border px-4 py-2">7:00 PM</td>
+            <td class="border px-4 py-2">Reunión de oración</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </section>
 
   <!-- Devocional -->
-  <section id="devocional" class="container py-5">
-    <h2>Devocional semanal</h2>
-    <p>Aquí puedes publicar reflexiones o artículos...</p>
+  <section id="devocional" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-6">Devocional semanal</h2>
+    <p class="text-lg">Aquí puedes publicar reflexiones o artículos...</p>
   </section>
 
   <!-- Donaciones -->
-  <section id="donaciones" class="bg-light py-5 text-center">
-    <h2>Donaciones</h2>
-    <p>Apoya nuestra misión con tu ofrenda.</p>
-    <a href="https://paypal.me/tucuenta" class="btn btn-success">Donar ahora</a>
+  <section id="donaciones" class="bg-green-100 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Donaciones</h2>
+    <p class="mb-4">Apoya nuestra misión con tu ofrenda.</p>
+    <a href="https://paypal.me/tucuenta" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Donar ahora</a>
   </section>
 
   <!-- En vivo -->
-  <section id="envivo" class="container py-5 text-center">
-    <h2>Transmisión en vivo</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TUVIDEO" frameborder="0" allowfullscreen></iframe>
+  <section id="envivo" class="container mx-auto py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Transmisión en vivo</h2>
+    <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/TUVIDEO" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="bg-light py-5">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="email">
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+  <section id="contacto" class="bg-gray-100 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nombre" class="w-full border p-2 rounded">
+        <input type="email" placeholder="Correo" class="w-full border p-2 rounded">
+        <textarea placeholder="Mensaje" class="w-full border p-2 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center p-3">
+  <footer class="bg-blue-900 text-white text-center p-4">
     <p>© 2026 Iglesia Ebenezer | “Hasta aquí nos ayudó Jehová”</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
