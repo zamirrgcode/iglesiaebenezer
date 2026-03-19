@@ -1,11 +1,15 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+
+:root {
+  --color-primario: #0066cc;
+  --color-secundario: #009688;
+  --color-acento: #ff9800;
+  --color-fondo: #fdfdfd;
 }
 
 /* Colores institucionales */
 .bg-ebenezer {
-  background-color: #0a2a66; /* Azul profundo */
+  background-color: #0a2a66; 
 }
 
 .btn-primary {
